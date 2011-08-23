@@ -81,7 +81,6 @@
 		000418FC120AA67A007589A0 /* GHNSInvocation+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 002D9C6B0F4915C2007932FE /* GHNSInvocation+Utils.h */; };
 		000418FD120AA67B007589A0 /* GHNSInvocationProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 00178E2D0FC3981900CA6A07 /* GHNSInvocationProxy.h */; };
 		000418FE120AA67C007589A0 /* GHNSObject+Invocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 002D9C6D0F4915C2007932FE /* GHNSObject+Invocation.h */; };
-		004810C6122E257500E3B69F /* GHUnitIOSTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 004810C5122E257500E3B69F /* GHUnitIOSTestMain.m */; };
 		004810DB122E25DD00E3B69F /* GHUnitIOSTestMain.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 00E6527D120C7CDD00DBBDBC /* GHUnitIOSTestMain.m */; };
 		004FFC0D11BEFB0A00ADEB22 /* GHTest+JUnitXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 0012288B11BA17EC00C038B4 /* GHTest+JUnitXML.m */; };
 		004FFC0E11BEFB0B00ADEB22 /* GHTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0012288D11BA17EC00C038B4 /* GHTest.m */; };
@@ -146,6 +145,8 @@
 		0080411A1290B1B60033DA60 /* GHNSURLConnectionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 008041191290B1B60033DA60 /* GHNSURLConnectionTest.m */; };
 		008041261290B1ED0033DA60 /* GHKVObserveTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 008041251290B1ED0033DA60 /* GHKVObserveTest.m */; };
 		00EB372412F39961000366F4 /* Shared-iPhone.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 00EB372312F39961000366F4 /* Shared-iPhone.xcconfig */; };
+		A888B490140325D8003CE53C /* GHUnitIOSTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E6527D120C7CDD00DBBDBC /* GHUnitIOSTestMain.m */; };
+		A888B492140325D9003CE53C /* GHUnitIOSTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E6527D120C7CDD00DBBDBC /* GHUnitIOSTestMain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -289,7 +290,6 @@
 		002D9C790F4915C2007932FE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		003280F60FB0C712006350E7 /* GHUnitIPhoneTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHUnitIPhoneTableViewDataSource.h; sourceTree = "<group>"; };
 		003280F70FB0C712006350E7 /* GHUnitIPhoneTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHUnitIPhoneTableViewDataSource.m; sourceTree = "<group>"; };
-		004810C5122E257500E3B69F /* GHUnitIOSTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHUnitIOSTestMain.m; sourceTree = "<group>"; };
 		006D7815120A93880053B72E /* iPhoneFramework.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = iPhoneFramework.sh; sourceTree = "<group>"; };
 		007730230F8D8DF400586577 /* GHAsyncTestCaseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHAsyncTestCaseTest.m; sourceTree = "<group>"; };
 		007730240F8D8DF400586577 /* GHRegisterTestCaseClassTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRegisterTestCaseClassTest.m; sourceTree = "<group>"; };
@@ -543,7 +543,6 @@
 		00AF12E70F2D880E009F0ABA /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				004810C5122E257500E3B69F /* GHUnitIOSTestMain.m */,
 				00DCB8780FA4F9E10022DA5A /* IPhone */,
 				000203F40F8EA86000EC31BA /* Data */,
 				00080FB80F4FC7CB0034DF4C /* GTM */,
@@ -857,6 +856,7 @@
 				004FFC2011BEFB3200ADEB22 /* GHTestSuite.m in Sources */,
 				004FFC2111BEFB3500ADEB22 /* NSException+GHTestFailureExceptions.m in Sources */,
 				004FFC2211BEFB3600ADEB22 /* NSValue+GHValueFormatter.m in Sources */,
+				A888B490140325D8003CE53C /* GHUnitIOSTestMain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -882,9 +882,9 @@
 				0051314711C6ED5D00A46E09 /* GHMockNSHTTPURLResponse.m in Sources */,
 				0051315A11C6EDA300A46E09 /* GHNSLocale+Mock.m in Sources */,
 				0051316311C6EDB400A46E09 /* GHUNSObject+Swizzle.m in Sources */,
-				004810C6122E257500E3B69F /* GHUnitIOSTestMain.m in Sources */,
 				0080411A1290B1B60033DA60 /* GHNSURLConnectionTest.m in Sources */,
 				008041261290B1ED0033DA60 /* GHKVObserveTest.m in Sources */,
+				A888B492140325D9003CE53C /* GHUnitIOSTestMain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
